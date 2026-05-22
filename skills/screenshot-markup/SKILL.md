@@ -21,12 +21,6 @@ Draw on a screenshot — circles, rectangles, arrows, captions, spotlights, blur
 
 This skill is **deterministic rendering only**. The *intelligence* — interpreting the user's prompt, locating the focus region in the screenshot, and choosing the right style — lives in you, the calling model. This script just turns your decisions into pixels.
 
-## ⚠️ Do NOT add captions by default
-
-The `--caption` flag writes a text label onto the image itself. **Only pass `--caption` when the user explicitly asks for a text label on the image** — phrases like "label it X", "add the text Y", "write 'Z' on it", or "make it a tutorial card with a caption".
-
-For pure pointing requests like "highlight the Send button", "circle the headline", "point at the dropdown", or "draw on the toggle" — **omit `--caption` entirely**. The image will be shown to the user with a description underneath it (in chat, in a viewer, in a doc); duplicating that as text *on* the image is visual noise. Trust the surrounding context to label what you've highlighted.
-
 ## When to use this skill
 
 Trigger when the user wants visual emphasis on part of a screenshot. Examples:
@@ -109,6 +103,12 @@ Style-specific flags:
   - `--cursor-size 56` — cursor size in pixels (square). Default 56. The script
     auto-shrinks when the target is smaller than the cursor so the cursor
     doesn't swallow the UI element it's pointing at.
+
+## ⚠️ `--caption` is opt-in
+
+`--caption` writes a text label onto the image itself. **Only pass it when the user explicitly asks for a text label** — phrases like "label it X", "add the text Y", "write 'Z' on it", or "make a tutorial card with a caption".
+
+For pure pointing requests like "highlight the Send button", "circle the headline", "point at the dropdown", or "draw on the toggle" — **omit `--caption` entirely**. The annotated image will be shown to the user with a description underneath it (in chat, in a viewer, in a doc); duplicating that as text *on* the image is visual noise.
 
 ## Worked examples
 
