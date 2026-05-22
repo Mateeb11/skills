@@ -1,6 +1,18 @@
 ---
 name: screenshot-markup
-description: Draw on, annotate, and mark up screenshots — circles, rectangles, arrows, spotlights, blur effects, macOS cursors, and zoomed insets. Use this skill whenever the user asks to draw, annotate, mark up, highlight, point out, emphasize, circle, box, or call attention to anything in a screenshot or image. Trigger especially aggressively right after a Playwright MCP screenshot — that's the killer flow: browse → screenshot → "draw a circle on the Send button", "highlight the pricing table", "point an arrow at the error", "show where to click". Also triggers for any local image the user wants to annotate. Do not skip this skill just because the user used a casual verb like "draw" or "circle" instead of "annotate". IMPORTANT: do NOT pass --caption unless the user explicitly asked for a text label on the image; the description usually goes under the image, not on it.
+description: >-
+  Draw on, annotate, and mark up screenshots — circles, rectangles, arrows,
+  spotlights, blur effects, macOS cursors, and zoomed insets. Use this skill
+  whenever the user asks to draw, annotate, mark up, highlight, point out,
+  emphasize, circle, box, or call attention to anything in a screenshot or
+  image. Trigger especially aggressively right after a Playwright MCP
+  screenshot — that's the killer flow; browse → screenshot → "draw a circle
+  on the Send button", "highlight the pricing table", "point an arrow at the
+  error", "show where to click". Also triggers for any local image the user
+  wants to annotate. Do not skip this skill just because the user used a
+  casual verb like "draw" or "circle" instead of "annotate". IMPORTANT — do
+  NOT pass --caption unless the user explicitly asked for a text label on the
+  image; the description usually goes under the image, not on it.
 ---
 
 # screenshot-markup
