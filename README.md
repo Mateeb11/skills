@@ -1,6 +1,8 @@
 # skills
 
-A collection of [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) skills by [@Mateeb11](https://github.com/Mateeb11).
+A collection of [agent skills](https://skills.sh) by [@Mateeb11](https://github.com/Mateeb11).
+
+These are **universal agent skills** — not Claude-only. They install into any agent the [skills CLI](https://skills.sh) supports, including Claude Code, Codex, Cursor, Gemini CLI, Antigravity, Amp, and more.
 
 ## Skills in this repo
 
@@ -45,10 +47,11 @@ npx skills add Mateeb11/skills@screenshot-markup
 npx skills add Mateeb11/skills@mac-disk-cleanup
 ```
 
-Or symlink directly into your Claude config:
+Or clone and symlink each skill into your agent's skills directory (path varies by agent — `~/.claude/skills` for Claude Code, etc.):
 
 ```bash
 git clone https://github.com/Mateeb11/skills.git ~/code/Mateeb11-skills
+# example for Claude Code:
 ln -s ~/code/Mateeb11-skills/skills/screenshot-markup ~/.claude/skills/screenshot-markup
 ln -s ~/code/Mateeb11-skills/skills/mac-disk-cleanup  ~/.claude/skills/mac-disk-cleanup
 ```
