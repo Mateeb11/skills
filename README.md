@@ -1,7 +1,3 @@
-# skills
-
-My collection of agent skills.
-
 ## Skills in this repo
 
 ### [screenshot-markup](./skills/screenshot-markup/)
