@@ -2,7 +2,7 @@
 
 A collection of [agent skills](https://skills.sh) by [@Mateeb11](https://github.com/Mateeb11).
 
-These are **universal agent skills** — not Claude-only. They install into any agent the [skills CLI](https://skills.sh) supports, including Claude Code, Codex, Cursor, Gemini CLI, Antigravity, Amp, and more.
+These are **universal agent skills**. They install into any agent the [skills CLI](https://skills.sh) supports, including Claude Code, Codex, Cursor, Gemini CLI, Antigravity, Amp, and more.
 
 ## Skills in this repo
 
